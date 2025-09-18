@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Acme Studio — Home</title>
+
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Optional custom styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Acme<span class="text-primary">Studio</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About / Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <a class="btn btn-primary ms-lg-3" href="contact.html">Get in touch</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO / CAROUSEL -->
+<header class="bg-light">
+  <div class="container py-5">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold">Designing modern, responsive UI with Bootstrap 5</h1>
+        <p class="lead text-muted">A sample internship project: remix Bootstrap components to build clean pages that scale from mobile to desktop.</p>
+        <a href="about.html" class="btn btn-outline-primary btn-lg me-2">Our Services</a>
+        <a href="contact.html" class="btn btn-primary btn-lg">Contact Us</a>
+      </div>
+      <div class="col-lg-6 d-none d-lg-block">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner rounded-3 shadow-sm">
+            <div class="carousel-item active">
+              <img src="https://picsum.photos/900/500?random=11" class="d-block w-100" alt="Hero 1">
+            </div>
+            <div class="carousel-item">
+              <img src="https://picsum.photos/900/500?random=12" class="d-block w-100" alt="Hero 2">
+            </div>
+            <div class="carousel-item">
+              <img src="https://picsum.photos/900/500?random=13" class="d-block w-100" alt="Hero 3">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- FEATURES -->
+<section class="py-5">
+  <div class="container">
+    <div class="row text-center mb-4">
+      <div class="col">
+        <h2 class="fw-bold">What we do</h2>
+        <p class="text-muted">Mixing Bootstrap components to create beautiful pages and user experiences.</p>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Responsive Layouts</h5>
+            <p class="card-text text-muted">Grid, utilities and responsive components to adapt to every device.</p>
+            <a href="about.html" class="stretched-link">Learn more</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">UI Patterns</h5>
+            <p class="card-text text-muted">Hero, cards, modals, navbars and clean forms using Bootstrap 5.</p>
+            <a href="about.html" class="stretched-link">See patterns</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Deployment Ready</h5>
+            <p class="card-text text-muted">Push to GitHub and deploy via GitHub Pages or Netlify with minimal config.</p>
+            <a href="contact.html" class="stretched-link">Get help</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL / CTA -->
+<section class="py-5 bg-primary text-white">
+  <div class="container">
+    <div class="d-md-flex align-items-center justify-content-between">
+      <div>
+        <h3 class="fw-bold mb-0">Ready to build your UI?</h3>
+        <p class="mb-0">We help remix components and craft polished pages.</p>
+      </div>
+      <div class="mt-3 mt-md-0">
+        <a class="btn btn-light btn-lg" href="contact.html">Start a Project</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-4 bg-white border-top">
+  <div class="container d-flex justify-content-between align-items-center">
+    <p class="mb-0 text-muted">© <span id="year"></span> AcmeStudio. All rights reserved.</p>
+    <div>
+      <a class="text-muted me-3" href="#">Privacy</a>
+      <a class="text-muted" href="#">Terms</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+<!-- Bootstrap 5 JS (Bundle includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

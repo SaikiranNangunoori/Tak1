@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thank You — AcmeStudio</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-light">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Acme<span class="text-primary">Studio</span></a>
+  </div>
+</nav>
+
+<section class="d-flex align-items-center justify-content-center" style="min-height:80vh;">
+  <div class="text-center">
+    <div class="mb-4">
+      <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" fill="currentColor" class="text-success bi bi-check-circle" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14Zm3.97-8.03a.75.75 0 0 0-1.08-1.04L7.477 9.417 5.383 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.08 0l3.92-4.06Z"/>
+      </svg>
+    </div>
+    <h1 class="fw-bold">Thank You!</h1>
+    <p class="lead text-muted mb-4">Your message has been received. We’ll get back to you shortly.</p>
+    <a href="index.html" class="btn btn-primary">Back to Home</a>
+  </div>
+</section>
+
+<footer class="py-4 bg-white border-top text-center">
+  <p class="mb-0 text-muted">© <span id="year4"></span> AcmeStudio.</p>
+</footer>
+
+<script>
+  document.getElementById('year4').textContent = new Date().getFullYear();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
