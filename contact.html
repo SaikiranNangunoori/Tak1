@@ -56,8 +56,6 @@
 
           <button type="submit" class="btn btn-primary">Send message</button>
         </form>
-
-        <div id="formAlert" class="alert mt-4 d-none" role="alert"></div>
       </div>
 
       <div class="col-lg-6">
@@ -83,11 +81,10 @@
 <script>
   document.getElementById('year3').textContent = new Date().getFullYear();
 
-  // Bootstrap-style client-side validation + fake submit
+  // Bootstrap-style client-side validation + redirect
   (function () {
     'use strict'
     const form = document.getElementById('contactForm');
-    const alertBox = document.getElementById('formAlert');
 
     form.addEventListener('submit', function (event) {
       event.preventDefault();
@@ -98,18 +95,8 @@
         return;
       }
 
-      // Simulate sending
-      alertBox.className = 'alert alert-info';
-      alertBox.textContent = 'Sending message...';
-      alertBox.classList.remove('d-none');
-
-      // Fake network delay
-      setTimeout(() => {
-        alertBox.className = 'alert alert-success';
-        alertBox.textContent = 'Thanks! Your message has been received. We will contact you shortly.';
-        form.reset();
-        form.classList.remove('was-validated');
-      }, 900);
+      // ✅ Redirect to thankyou.html only after successful validation
+      window.location.href = "thankyou.html";
     }, false);
   })();
 </script>
